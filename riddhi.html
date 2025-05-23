@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Invitation - Mysore</title>
+    <style>
+        body {
+            background: url('https://karnatakatourism.org/wp-content/uploads/2020/06/Mysuru-Palace-banner-1920_1100.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .invitation {
+            max-width: 500px;
+            margin: 40px auto;
+            background: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            padding: 32px 24px;
+            text-align: center;
+        }
+        h1 {
+            color: #7b4397;
+            margin-bottom: 10px;
+        }
+        .details {
+            font-size: 1.2em;
+            margin: 18px 0;
+        }
+        .images {
+            margin: 20px 0;
+        }
+        .images img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 0 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .footer {
+            margin-top: 24px;
+            font-size: 1em;
+            color: #555;
+        }
+        .floating-gif {
+            position: fixed;
+            top: 50px;
+            left: 50px;
+            width: 80px;
+            height: 80px;
+            z-index: 1000;
+            cursor: pointer;
+            transition: top 0.4s, left 0.4s;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const gif = document.getElementById('floatingGif');
+            function moveGifRandomly() {
+                const padding = 20;
+                const maxX = window.innerWidth - gif.offsetWidth - padding;
+                const maxY = window.innerHeight - gif.offsetHeight - padding;
+                const randomX = Math.floor(Math.random() * maxX);
+                const randomY = Math.floor(Math.random() * maxY);
+                gif.style.left = randomX + 'px';
+                gif.style.top = randomY + 'px';
+            }
+            if (gif) {
+                gif.addEventListener('mouseenter', moveGifRandomly);
+                // Optional: move to random position on load
+                moveGifRandomly();
+            }
+        });
+    </script>
+</head>
+<body>
+    <img id="floatingGif" class="floating-gif" src="https://i.pinimg.com/originals/80/55/61/8055612101b246e98eff638e393b0a7d.gif" alt="Floating Gif" />
+    <div class="invitation">
+        <h1>You're Invited!</h1>
+        <div class="details">
+            <p><strong>To:</strong> Seema Solanki</p>
+            <p><strong>Destination:</strong> Mysore</p>
+            <p><strong>Duration:</strong> 10 days</p>
+            <p><strong>Mode of Travel:</strong> Train</p>
+            <p><strong>Hindu Destinations to Visit:</strong></p>
+            <ul style="text-align:left; margin: 0 auto 0 40px; font-size:1em; color:#6a1b9a;">
+                <li>Chamundeshwari Temple (Chamundi Hills)</li>
+                <li>Nandi Bull Statue</li>
+                <li>Trinesvaraswamy Temple</li>
+                <li>Prasanna Krishnaswamy Temple</li>
+                <li>Someshwara Temple</li>
+                <li>Gayatri Temple</li>
+                <li>Lakshmiramana Swamy Temple</li>
+                <li>Kote Anjaneya Swamy Temple</li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Mysore Palace">
+            <img src="https://www.financialexpress.com/wp-content/uploads/2024/09/vande-bharat-express-4.jpg?w=1024" alt="Train Journey">
+            <img src="https://www.shutterstock.com/shutterstock/photos/2005125791/display_1500/stock-photo-mysore-karnataka-india-december-renovated-nandi-bull-statue-on-chamundi-hills-dates-2005125791.jpg" alt="Nandi Bull Statue, Mysore" />
+        </div>
+        <div class="footer">
+            <p>Pack your bags for a colorful adventure!<br>Let's explore the beauty of Mysore together by train.</p>
+            <p style="margin-top:18px; font-size:1.1em; color:#6a1b9a;">
+                Dear Seema,<br><br>
+                I am thrilled to invite you on a memorable journey to the enchanting city of Mysore! Our adventure will last for 10 wonderful days, filled with exploration, laughter, and unforgettable experiences. We'll travel together by train, enjoying scenic views and great company along the way.<br><br>
+                Mysore awaits us with its majestic palaces, vibrant markets, and rich cultural heritage. From savoring local delicacies to discovering historical landmarks, every day will be a new chapter in our travel story.<br><br>
+                I truly hope you can join me on this colorful escapade. Your presence will make this trip even more special!
+                <br><br>With excitement,<br>Your daughter,<br><strong>Riddhi Solanki</strong>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
