@@ -1,7 +1,17 @@
+Yash
 ---
 
 **Author:** Yash Solanki
 **Email:** [yashns2013@gmail.com](mailto:yashns2013@gmail.com)
+
+---
+
+### Training Details
+
+**Instructor:** *Maduri Akka*
+
+**Institution:** Purnapramati Gurukulam, Bengaluru
+**Date:** April 2025
 
 ---
 
@@ -37,14 +47,6 @@ Explore interactive animations developed using Scratch:
 
 Basic concepts and practice related to operating systems.
 
----
-
-### Training Details
-
-**Instructor:** Maduri Akka
-**Institution:** Purnapramati Gurukulam, Bengaluru
-**Date:** April 2025
 
 ---
 
-Let me know if you'd like this formatted as a README file or need it in another format.
