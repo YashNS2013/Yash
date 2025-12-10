@@ -27,12 +27,12 @@ root.geometry("300x250")
 root.resizable(True, True)
 
 # Header
-symbol_font = font.Font(size=36, weight="bold", family="Arial")
+symbol_font = font.Font(size=24, weight="bold", family="Arial")
 header = tk.Label(root, text="🔢 COUNTER", font=symbol_font, pady=10)
 header.pack()
 
 # Number display
-number_font = font.Font(size=36, weight="bold")
+number_font = font.Font(size=48, weight="bold")
 number_label = tk.Label(root, text="0", font=number_font, pady=10)
 number_label.pack()
 
